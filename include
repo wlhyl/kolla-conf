@@ -1,0 +1,7 @@
+RUN rm -rf /etc/pip.conf
+RUN echo [global] >> /etc/pip.conf
+RUN echo index-url = http://mirrors.aliyun.com/pypi/simple/ >>/etc/pip.conf
+RUN echo >> /etc/pip.conf
+RUN echo [install] >> /etc/pip.conf
+RUN echo trusted-host=mirrors.aliyun.com >> /etc/pip.conf
+
